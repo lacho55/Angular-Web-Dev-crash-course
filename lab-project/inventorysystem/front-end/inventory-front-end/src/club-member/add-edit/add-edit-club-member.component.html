@@ -1,0 +1,26 @@
+<h2>Add Club Member</h2>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="form-container">
+  <label>
+    First Name:
+    <input type="text" formControlName="firstName" />
+  </label>
+
+  <label>
+    Last Name:
+    <input type="text" formControlName="lastName" />
+  </label>
+
+  <label>
+    Email:
+    <input type="email" formControlName="email" />
+  </label>
+
+  <label>
+    Phone:
+    <input type="text" formControlName="phone" />
+  </label>
+
+  <button type="submit" [disabled]="form.invalid">Save</button>
+  <a routerLink="/club-members" class="cancel-link">Cancel</a>
+</form>

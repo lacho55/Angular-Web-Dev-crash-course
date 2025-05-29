@@ -1,0 +1,63 @@
+.page-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+.btn-add-member {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(to right, #28a745, #218838);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  transition: background 0.3s ease;
+}
+
+.btn-add-member:hover {
+  background: linear-gradient(to right, #218838, #1e7e34);
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.user-table thead {
+  background-color: #f4f6f8;
+  color: #2c3e50;
+  text-align: left;
+}
+
+.user-table th,
+.user-table td {
+  padding: 0.9rem 1.2rem;
+  border-bottom: 1px solid #eaecef;
+}
+
+.user-table tr:hover {
+  background-color: #f1f9ff;
+}
+
+.btn-delete {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-delete:hover {
+  background-color: #c0392b;
+}

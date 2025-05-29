@@ -1,0 +1,26 @@
+<h1 class="page-title">Club Members</h1>
+
+<a (click)="goAdd()" class="btn-add-member">➕ Add Club Member</a>
+
+<table class="user-table">
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th></th>
+  </tr>
+  </thead>
+  <tbody>
+    @for (user of clubMembers; track user.id) {
+      <tr>
+        <td>{{user.id}} {{user.firstName}} {{user.lastName}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.phone}}</td>
+        <td>
+          <button (click)="deleteUser(user.id)" class="btn-delete">🗑 Delete</button>
+        </td>
+      </tr>
+    }
+  </tbody>
+</table>
